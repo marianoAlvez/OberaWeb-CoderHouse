@@ -1,0 +1,65 @@
+/* SECCION @Media*/
+
+.header {
+    grid-area: header;
+    background: $colorBadground;
+}
+
+.navbar {
+    grid-area: navbar;
+    background: $colorBadground;
+}
+
+.main {
+    grid-area: main;
+    background: $colorBadground;
+} 
+
+.footer {
+    grid-area: footer;
+    background: $colorTerciario;
+    
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;    
+    grid-template: 
+    "header" auto
+    "navbar" auto
+    "main"   auto
+    "footer" auto; /*vh= view height*/ /*vw= view width*/
+}
+
+.busqueda {    
+   opacity: 0;
+   visibility: hidden;
+}
+
+/*mas de 600 px pasa a modo tablet*/
+@media (min-width: 600px) {
+
+    .grid-container{
+        grid-template: 
+        "header  header" auto
+        "navbar  navbar" auto
+        "main    main"   auto
+        "footer  footer" auto; 
+    } 
+
+    .busqueda {    
+       opacity: 1;
+       visibility: visible;
+    }
+}/* Cierro media query de 600px*/
+
+@media (min-width: 960px) {
+
+    .grid-container{
+        grid-template: 
+        "header  header  header"  100px
+        "navbar  navbar  navbar"  auto
+        "main    main    main"    auto
+        "footer  footer  footer" auto; 
+    }
+} /* Cierro media query Desktop*/

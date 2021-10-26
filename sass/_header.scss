@@ -1,0 +1,33 @@
+header {    
+    justify-content: space-between;
+    padding-top: .5rem;
+
+    a .logo {
+        justify-content: center;
+        width: 250px;
+        box-shadow:$shadowRightBottom;
+
+        &:hover {
+            border: .2rem outset $colorSecundario;
+        }
+    }    
+
+    .redesTop {
+        i {
+            font-size: 1rem;                   
+        }        
+        
+        a{            
+            .fab { 
+                font-size: 2rem;
+                color: $colorPrincipal;
+                margin: 0 2.5rem; 
+                
+                &:hover {
+                    color: $colorSecundario; 
+                }
+            }
+            
+        }
+    }
+}/*FIN  Estilos Header*/

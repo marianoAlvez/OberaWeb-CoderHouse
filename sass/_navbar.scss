@@ -1,0 +1,40 @@
+
+/*Estilos MENU*/
+.navbar {    
+
+    .menu {
+        background: $colorPrincipal;
+        width: 100%;            
+        justify-content: center;
+
+        .fa-phone-alt{    
+            color: $colorBadground;
+            margin:0 auto;    
+            cursor: pointer;
+        
+            &:hover {
+                color: $colorSecundario; 
+                transition: all 0.5s ease-in-out;
+            }            
+        }
+
+        a {
+            color: $colorBadground !important; 
+            font-size: 1.3rem;
+            
+            &:hover {
+                color: $colorSecundario !important;                
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        .dropdown-menu {
+            background: $colorSecundario;
+        }
+
+        .busqueda {
+            border: 2px inset black;
+            box-shadow:$shadowRightBottom;
+        }
+    }
+}

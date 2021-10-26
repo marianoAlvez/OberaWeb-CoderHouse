@@ -1,0 +1,49 @@
+    .boton{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-decoration: none;
+        padding: .5rem 2rem; 
+        border-radius: .3rem;
+        box-shadow: $shadowRightBottom;
+        
+           
+
+        &.boton-blanco{
+            color: $colorSecundario;
+            background-color:$colorBadground;    
+            border: 2px solid $colorSecundario;
+
+            &:hover{
+                color: $colorBadground;
+                background-color:$colorSecundario;       
+                transition: background-color, color  500ms  ease-out;
+                              
+            }
+        }
+
+        
+
+        
+    }
+
+    .button_rojo {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: .2rem 2rem; 
+        border-radius: .3rem;
+        box-shadow: $shadowRightBottom;
+        color: $colorBadground;
+        background-color:$colorSecundario;    
+        border: 2px solid $colorSecundario;
+
+        &:hover{
+            color:black ;
+            background-color:$colorSecundario;       
+            transition: background-color, color  500ms  ease-out;
+                          
+        }
+    }
+
+    

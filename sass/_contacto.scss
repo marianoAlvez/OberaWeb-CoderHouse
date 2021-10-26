@@ -1,0 +1,57 @@
+.seccion{
+  padding-top: 1rem;
+  padding-bottom: 7rem;
+}
+
+#contactenos {
+    position: relative;  
+    
+    .container-fluid{
+      width: 100%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      position: relative;
+      }
+          
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 100%;
+        filter: grayscale(1);
+      }
+    
+    form{    
+             
+        padding: 3rem;        
+        background-color: transparent;
+        box-shadow: $shadowAll;
+    
+        .form-block{
+            
+            margin-bottom: 1rem;
+            
+
+            .form-control{
+                height: 4rem;
+                font-size: 1.2rem;
+                border: 2px solid $colorSecundario;
+                width: 100%;
+                padding: .5rem 1rem;
+                box-shadow: $shadowRightBottom;                
+              }
+
+              textarea{
+                display: block;
+                height: 10rem;
+                font-size: 1.1rem;
+                border: 2px solid $colorSecundario;
+                width: 100%;
+                padding: .5rem 1rem;
+                box-shadow: $shadowRightBottom;
+            }            
+          }
+        } 
+    }

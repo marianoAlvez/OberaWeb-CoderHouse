@@ -22,7 +22,8 @@ main {
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count: 2;
-        margin-block-end: 1rem;    
+        margin-block-end: 1rem;
+        font-size: 1.3rem;         
     }
        
     .title__img__productos{
@@ -39,7 +40,22 @@ main {
         margin-left: 5rem;
         margin-right: 5rem;
         padding: 1.5rem 2rem;
-    }  
+
+        h1 {
+            font-size: 1.3rem;
+            text-align: justify;            
+        }
+    } 
+    
+    .p__servicio {
+        text-align: justify;
+    }
+
+    .icon {
+        width: 9rem;
+    }
+
+
 }
 
 #galeria {

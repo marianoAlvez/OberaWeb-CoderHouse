@@ -163,10 +163,7 @@ footer .redes a:hover {
   display: -ms-grid;
   display: grid;
   gap: 10px;
-  grid-template: "header" auto
- "navbar" auto
- "main"   auto
- "footer" auto;
+  grid-template: "header" auto "navbar" auto "main"   auto "footer" auto;
   /*vh= view height*/
   /*vw= view width*/
 }
@@ -179,10 +176,7 @@ footer .redes a:hover {
 /*mas de 600 px pasa a modo tablet*/
 @media (min-width: 600px) {
   .grid-container {
-    grid-template: "header  header" auto
- "navbar  navbar" auto
- "main    main"   auto
- "footer  footer" auto;
+    grid-template: "header  header" auto "navbar  navbar" auto "main    main"   auto "footer  footer" auto;
   }
   .busqueda {
     opacity: 1;
@@ -193,10 +187,7 @@ footer .redes a:hover {
 /* Cierro media query de 600px*/
 @media (min-width: 960px) {
   .grid-container {
-    grid-template: "header  header  header"  100px
- "navbar  navbar  navbar"  auto
- "main    main    main"    auto
- "footer  footer  footer" auto;
+    grid-template: "header  header  header"  100px "navbar  navbar  navbar"  auto "main    main    main"    auto "footer  footer  footer" auto;
   }
 }
 
@@ -337,6 +328,7 @@ main .title {
           animation-iteration-count: 2;
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
+  font-size: 1.3rem;
 }
 
 main .title__img__productos {
@@ -353,6 +345,19 @@ main .bloque_texto {
   margin-left: 5rem;
   margin-right: 5rem;
   padding: 1.5rem 2rem;
+}
+
+main .bloque_texto h1 {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+main .p__servicio {
+  text-align: justify;
+}
+
+main .icon {
+  width: 9rem;
 }
 
 #galeria img {

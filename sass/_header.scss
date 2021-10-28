@@ -1,50 +1,41 @@
 header {    
     justify-content: space-between;
-    padding-top: .5rem;
-
-
-
-    a .logo {
-        justify-content: center;
-        width: 250px;
-        box-shadow:$shadowRightBottom;
-
-        
-
-        /* &:hover {
-            border: .2rem outset $colorSecundario;
-        } */
-    }   
-    
+    padding-top: .5rem;   
+          
 
     #logo_cambiante {
-        min-height: 250px;
+        min-height: 165px;
         min-width: 250px;
-        width: 50px;   
-        margin-bottom: -60px;     
-        background: url(../images/logoOberaWeb_png-removebg-preview.png) no-repeat;
-    }
-
-    #logo_cambiante:hover {
+        width: 50px; 
+        cursor: pointer;          
         background: url(../images/logoOberaWeb2_png-removebg-preview.png) no-repeat;
+        box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
+        -webkit-box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
+        -moz-box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);       
+        
+        &:hover {
+            background: url(../images/logoOberaWeb_png-removebg-preview.png) no-repeat;         
+        }
     }    
 
     .redesTop {
         i {
-            font-size: 1rem;                              
+            font-size: 1.3rem;                              
         }        
         
         a{            
             .fab { 
-                font-size: 2rem;
+                font-size: 2.5rem;
                 color: $colorPrincipal;
                 margin: 0 2.5rem; 
                 
                 &:hover {
                     color: $colorSecundario; 
+                    transform: scale(1.25);                                                         
                 }
             }
             
         }
     }
 }/*FIN  Estilos Header*/
+

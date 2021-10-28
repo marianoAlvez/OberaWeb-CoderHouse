@@ -4,8 +4,14 @@
 
     .menu {
         background: $colorPrincipal;
+        background: linear-gradient(10deg, $colorSecundario, $colorPrincipal ); 
         width: 100%;            
         justify-content: center;
+        border-radius: .3rem;
+        margin-bottom:-.5rem ;
+        box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
+        -webkit-box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
+        -moz-box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
 
         .fa-phone-alt{    
             color: $colorBadground;
@@ -23,13 +29,14 @@
             font-size: 1.3rem;
             
             &:hover {
-                color: $colorSecundario !important;                
+                color: $colorTerciario !important;                               
                 transition: all 0.5s ease-in-out;
             }
         }
 
         .dropdown-menu {
-            background: $colorSecundario;
+            background:  darken($color: $colorPrincipal, $amount: 4);
+            min-width: 20rem ;
         }
 
         .busqueda {

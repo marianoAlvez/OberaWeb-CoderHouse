@@ -6,52 +6,51 @@ header {
   padding-top: .5rem;
 }
 
-header a .logo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 250px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  /* &:hover {
-            border: .2rem outset $colorSecundario;
-        } */
-}
-
 header #logo_cambiante {
-  min-height: 250px;
+  min-height: 165px;
   min-width: 250px;
   width: 50px;
-  margin-bottom: -60px;
-  background: url(../images/logoOberaWeb_png-removebg-preview.png) no-repeat;
+  cursor: pointer;
+  background: url(../images/logoOberaWeb2_png-removebg-preview.png) no-repeat;
+  box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
 }
 
 header #logo_cambiante:hover {
-  background: url(../images/logoOberaWeb2_png-removebg-preview.png) no-repeat;
+  background: url(../images/logoOberaWeb_png-removebg-preview.png) no-repeat;
 }
 
 header .redesTop i {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 header .redesTop a .fab {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #C85108;
   margin: 0 2.5rem;
 }
 
 header .redesTop a .fab:hover {
   color: #A20E0E;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 /*FIN  Estilos Header*/
 /*Estilos MENU*/
 .navbar .menu {
   background: #C85108;
+  background: linear-gradient(10deg, #A20E0E, #C85108);
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: .3rem;
+  margin-bottom: -.5rem;
+  box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
 }
 
 .navbar .menu .fa-phone-alt {
@@ -72,13 +71,14 @@ header .redesTop a .fab:hover {
 }
 
 .navbar .menu a:hover {
-  color: #A20E0E !important;
+  color: #d66b28 !important;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .navbar .menu .dropdown-menu {
-  background: #A20E0E;
+  background: #b44907;
+  min-width: 20rem;
 }
 
 .navbar .menu .busqueda {
@@ -104,6 +104,9 @@ footer .barra-footer {
 
 footer .logo-footer {
   width: 100%;
+  box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
 }
 
 footer ul {
@@ -281,8 +284,10 @@ footer .redes a:hover {
 .boton.boton-blanco:hover {
   color: #F3F0D1;
   background-color: #A20E0E;
-  -webkit-transition: background-color, color  500ms  ease-out;
-  transition: background-color, color  500ms  ease-out;
+  -webkit-transition: background-color, color  500ms  ease-in-out;
+  transition: background-color, color  500ms  ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .button_rojo {
@@ -301,8 +306,10 @@ footer .redes a:hover {
 .button_rojo:hover {
   color: black;
   background-color: #A20E0E;
-  -webkit-transition: background-color, color  500ms  ease-out;
-  transition: background-color, color  500ms  ease-out;
+  -webkit-transition: background-color, color  500ms  ease-in-out;
+  transition: background-color, color  500ms  ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 main .box__img {
@@ -340,6 +347,11 @@ main .img__galeria {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+main .star {
+  color: #d66b28;
+  font-size: 1.5rem;
 }
 
 main .title {
@@ -392,10 +404,14 @@ main .bloque_texto {
   border: 0.5rem solid #E29C68;
   background: #f0ecc5;
   border-radius: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding: 1.5rem 2rem;
+  box-shadow: inset -1px 4px 14px 18px rgba(39, 10, 10, 0.18);
+  -webkit-box-shadow: inset -1px 4px 14px 18px rgba(39, 10, 10, 0.18);
+  -moz-box-shadow: inset -1px 4px 14px 18px rgba(39, 10, 10, 0.18);
 }
 
 main .bloque_texto h1 {
@@ -408,8 +424,10 @@ main .p__servicio {
   text-align: justify;
   background: #e8e3a9;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 5px 2px #fff;
-  box-shadow: 0 0 5px 2px #fff;
+  border: solid 5px #E29C68;
+  box-shadow: inset -1px -1px 25px 6px rgba(255, 255, 255, 0.63);
+  -webkit-box-shadow: inset -1px -1px 25px 6px rgba(255, 255, 255, 0.63);
+  -moz-box-shadow: inset -1px -1px 25px 6px rgba(255, 255, 255, 0.63);
 }
 
 main .icon {
@@ -690,6 +708,7 @@ body {
 * {
   margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
 
 html {
@@ -719,7 +738,7 @@ ul li a {
 
 h1, h3, p {
   font-size: 1.3rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .flex-container {

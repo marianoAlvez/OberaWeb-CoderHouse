@@ -5,9 +5,7 @@
         text-decoration: none;
         padding: .5rem 2rem; 
         border-radius: .3rem;
-        box-shadow: $shadowRightBottom;
-        
-           
+        box-shadow: $shadowRightBottom;      
 
         &.boton-blanco{
             color: $colorSecundario;
@@ -17,14 +15,10 @@
             &:hover{
                 color: $colorBadground;
                 background-color:$colorSecundario;       
-                transition: background-color, color  500ms  ease-out;
-                              
+                transition: background-color, color  500ms  ease-in-out;
+                transform: scale(1.05);                              
             }
-        }
-
-        
-
-        
+        }       
     }
 
     .button_rojo {
@@ -41,8 +35,8 @@
         &:hover{
             color:black ;
             background-color:$colorSecundario;       
-            transition: background-color, color  500ms  ease-out;
-                          
+            transition: background-color, color  500ms  ease-in-out;
+            transform: scale(1.05);                          
         }
     }
 

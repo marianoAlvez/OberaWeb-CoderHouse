@@ -23,6 +23,11 @@ main {
         height: 100%; 
         object-fit: cover;   
     }
+
+    .star {
+        color: #d66b28;
+         font-size: 1.5rem;
+    }
     
     .title {   
         text-align: center;
@@ -61,11 +66,15 @@ main {
     .bloque_texto{
         border: .5rem solid $colorBorder;
         background: darken($color: $colorBadground, $amount: 3);
-        border-radius: 1rem;        
+        border-radius: 1rem; 
+        margin-top: 2rem;       
         margin-bottom: 2rem;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
-        padding: 1.5rem 2rem;        
+        padding: 1.5rem 2rem; 
+        box-shadow:inset -1px 4px 14px 18px rgba(39,10,10,0.18);
+        -webkit-box-shadow:inset -1px 4px 14px 18px rgba(39,10,10,0.18);
+        -moz-box-shadow:inset -1px 4px 14px 18px rgba(39,10,10,0.18);     
 
         h1 {
             font-size: 1.3rem;
@@ -78,9 +87,11 @@ main {
         text-align: justify;
         background: darken($color: $colorBadground, $amount: 10);
         border-radius: 1rem;
-        -webkit-box-shadow: 0 0 5px 2px #fff;
-        -moz-box-shadow: 0 0 5px 2px #fff;
-        box-shadow: 0 0 5px 2px #fff;
+        border: solid 5px $colorBorder;
+        box-shadow:inset -1px -1px 25px 6px rgba(255,255,255,0.63);
+        -webkit-box-shadow:inset -1px -1px 25px 6px rgba(255,255,255,0.63);
+        -moz-box-shadow:inset -1px -1px 25px 6px rgba(255,255,255,0.63);
+
     }
 
     .icon {

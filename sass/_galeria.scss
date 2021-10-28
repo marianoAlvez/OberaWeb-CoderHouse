@@ -1,45 +1,71 @@
 main {
-    .box__productos {
+    .box__img {
         width: 20rem;
         height: 20rem; 
         margin: 0.3rem;   
         border: 2px solid $colorSecundario;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: end;     
+        
+        .zoom {
+            transition: transform .2s; 
+        }
+         
+        .zoom:hover {
+            object-fit: contain;
+            transform: scale(1.5); 
+        }
     }
     
-    .img__productos{
-        background-size: cover;
+    .img__galeria{        
         width: 100%;
-        height: 100%;    
+        height: 100%; 
+        object-fit: cover;   
     }
     
     .title {   
         text-align: center;
         font-size: 2rem; 
         color:$colorSecundario;
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count: 2;
         margin-block-end: 1rem;
-        font-size: 1.3rem;         
+        animation-duration: 1.5s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }                
+    }
+
+    .subTitle {
+        text-align: center;
+        font-size: 1.3rem;
+        color: black;
     }
        
-    .title__img__productos{
+    .title__img__galeria{
         position: absolute;
-        font-size: 2.4rem; 
-        color:$colorSecundario;
+        font-size: 2.4rem;        
         font-size:x-large;
-        background: $colorBadground; 
+        
     }
          
     .bloque_texto{
-        border: .5rem solid $colorBorder;        
+        border: .5rem solid $colorBorder;
+        background: darken($color: $colorBadground, $amount: 3);
+        border-radius: 1rem;        
         margin-bottom: 2rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        padding: 1.5rem 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding: 1.5rem 2rem;        
 
         h1 {
             font-size: 1.3rem;
@@ -48,7 +74,13 @@ main {
     } 
     
     .p__servicio {
+        padding: 1rem;
         text-align: justify;
+        background: darken($color: $colorBadground, $amount: 10);
+        border-radius: 1rem;
+        -webkit-box-shadow: 0 0 5px 2px #fff;
+        -moz-box-shadow: 0 0 5px 2px #fff;
+        box-shadow: 0 0 5px 2px #fff;
     }
 
     .icon {
@@ -59,20 +91,20 @@ main {
 }
 
 #galeria {
-    & img{
-        filter:grayscale(1)
-    }  
     
-    & h4{    
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        text-align: center;
-        position: absolute;
-        top: 40%;
-        color: $colorBadground;
-        font-size:1.8rem ;
-        width: 100%;
-        top: 0;
+    & img{
+        object-fit: cover;
+        filter:brightness(70%);
+        animation: escalar 1.5s infinite alternate;
+    }  
+
+    @keyframes escalar {
+        to {
+            transform: scale(1);
+        }
+        from {
+            transform: scale(1.05);
+        }        
     }
 
     .cuadrado-perfecto{        
@@ -92,12 +124,24 @@ main {
         }
 
         &:hover img{
-            filter:grayscale(0)
+            filter:brightness(100%)
         }
         
         &:hover h4{
             display: none;
         }
+    }
+
+    & h4{    
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        color: $colorBadground;
+        font-size:1.8rem ;
+        width: 100%;
+        top: 0;
     }
 }
 

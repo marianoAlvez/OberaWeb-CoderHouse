@@ -7,6 +7,8 @@
 @import "contacto";
 @import "button";
 @import "galeria";
+@import "lugaresTuristicos";
+@import "videos";
 
 * {
     margin: 0 auto;
@@ -35,14 +37,12 @@
 ul li a {
     text-decoration: none;
     font-size: .8rem;
+    font-family: roboto, sans-serif;
 }
 
-h3 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
+h1, h3, p {
+    font-size: 1.3rem;
+    text-align: justify;
 }
 
 .flex-container {

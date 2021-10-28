@@ -11,14 +11,14 @@ header #logo_cambiante {
   min-width: 250px;
   width: 50px;
   cursor: pointer;
-  background: url(../images/logoOberaWeb2_png-removebg-preview.png) no-repeat;
+  background: url(../images/logoOberaWeb2_png.png) no-repeat;
   box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
 }
 
 header #logo_cambiante:hover {
-  background: url(../images/logoOberaWeb_png-removebg-preview.png) no-repeat;
+  background: url(../images/logoOberaWeb_png.png) no-repeat;
 }
 
 header .redesTop i {

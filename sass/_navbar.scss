@@ -5,10 +5,10 @@
     .menu {
         background: $colorPrincipal;
         background: linear-gradient(10deg, $colorSecundario, $colorPrincipal ); 
-        width: 100%;            
+        width: 97%;            
         justify-content: center;
         border-radius: .3rem;
-        margin-bottom:-.5rem ;
+        margin-bottom: 1rem ;
         box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
         -webkit-box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
         -moz-box-shadow: 18px 18px 14px -3px rgba(0,0,0,0.63);
@@ -25,12 +25,13 @@
         }
 
         a {
-            color: $colorBadground !important; 
+            color: $colorBadground !important; // important para pisar clase de bootstrap
             font-size: 1.3rem;
             
-            &:hover {
-                color: $colorTerciario !important;                               
+            &:hover,  &:hover > i {
+                color:darken($color: $colorTerciario, $amount:25) !important;  // important para pisar clase de bootstrap                             
                 transition: all 0.5s ease-in-out;
+                font-weight: bold;
             }
         }
 

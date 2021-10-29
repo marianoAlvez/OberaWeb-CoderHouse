@@ -15,12 +15,13 @@ main {
         .zoom:hover {
             object-fit: contain;
             transform: scale(1.5); 
-        }     
+        }      
     }
 
     .galeria_inicio {
-        width: 97%;
+        width: 80%;
         margin: 0 auto;
+        margin-top: 5rem;
     }
     
     .img__galeria{        
@@ -108,7 +109,7 @@ main {
 
 #galeria {
     
-    & img{
+    & img {
         object-fit: cover;
         filter:brightness(70%);
         animation: escalar 1.5s infinite alternate;

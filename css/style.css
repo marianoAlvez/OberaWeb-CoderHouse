@@ -42,12 +42,12 @@ header .redesTop a .fab:hover {
 .navbar .menu {
   background: #C85108;
   background: linear-gradient(10deg, #A20E0E, #C85108);
-  width: 100%;
+  width: 97%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: .3rem;
-  margin-bottom: -.5rem;
+  margin-bottom: 1rem;
   box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 18px 18px 14px -3px rgba(0, 0, 0, 0.63);
@@ -70,10 +70,11 @@ header .redesTop a .fab:hover {
   font-size: 1.3rem;
 }
 
-.navbar .menu a:hover {
-  color: #d66b28 !important;
+.navbar .menu a:hover, .navbar .menu a:hover > i {
+  color: #6b3514 !important;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  font-weight: bold;
 }
 
 .navbar .menu .dropdown-menu {
@@ -343,8 +344,9 @@ main .box__img .zoom:hover {
 }
 
 main .galeria_inicio {
-  width: 97%;
+  width: 80%;
   margin: 0 auto;
+  margin-top: 5rem;
 }
 
 main .img__galeria {

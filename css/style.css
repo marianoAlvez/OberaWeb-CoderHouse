@@ -329,20 +329,6 @@ main .box__img {
           align-items: end;
 }
 
-main .box__img .zoom {
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-main .box__img .zoom:hover {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
 main .galeria_inicio {
   width: 80%;
   margin: 0 auto;
@@ -518,7 +504,7 @@ h1 {
 }
 
 .small, .normal, .large {
-  margin: 10px;
+  margin: 1rem 3rem;
 }
 
 .small img, .normal img, .large img {
@@ -529,21 +515,6 @@ h1 {
      object-fit: cover;
   border: solid 5px #d66b28;
   border-radius: 10px;
-}
-
-.small .zoom, .normal .zoom, .large .zoom {
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.small .zoom:hover, .normal .zoom:hover, .large .zoom:hover {
-  border: none;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 
 .hoteles {
@@ -569,7 +540,9 @@ h1 {
 @media (min-width: 480px) {
   .contenedor {
     width: 460px;
-    margin: auto;
+  }
+  .contenedor .small, .contenedor .normal, .contenedor .large {
+    margin: .5rem .5rem;
   }
   .fila {
     display: -webkit-box;
@@ -591,6 +564,19 @@ h1 {
   }
   .normal, .large {
     height: 200px;
+  }
+  .zoom {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .zoom:hover {
+    border: none;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 

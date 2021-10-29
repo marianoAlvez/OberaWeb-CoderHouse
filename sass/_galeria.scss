@@ -6,16 +6,7 @@ main {
         border: 2px solid $colorSecundario;
         display: flex;
         justify-content: center;
-        align-items: end;     
-        
-        .zoom {
-            transition: transform .2s; 
-        }        
-        
-        .zoom:hover {
-            object-fit: contain;
-            transform: scale(1.5); 
-        }      
+        align-items: end; 
     }
 
     .galeria_inicio {

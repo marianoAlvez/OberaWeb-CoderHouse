@@ -10,12 +10,17 @@ main {
         
         .zoom {
             transition: transform .2s; 
-        }
-         
+        }        
+        
         .zoom:hover {
             object-fit: contain;
             transform: scale(1.5); 
-        }
+        }     
+    }
+
+    .galeria_inicio {
+        width: 97%;
+        margin: 0 auto;
     }
     
     .img__galeria{        

@@ -342,6 +342,11 @@ main .box__img .zoom:hover {
           transform: scale(1.5);
 }
 
+main .galeria_inicio {
+  width: 97%;
+  margin: 0 auto;
+}
+
 main .img__galeria {
   width: 100%;
   height: 100%;

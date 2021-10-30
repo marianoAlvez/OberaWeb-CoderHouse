@@ -7,6 +7,7 @@
       <meta name="description" content"">
       <meta name ="keywords" content="obera turismo, fotos obera web, fiestas obera web, noche obereña, obera sitios turísticos, restaurante, boliche, discoteca, isidoro bar, recital, peña, donde salir en obera, que hacer de noche en obera, resto, sociales, fotos amigos, lugares turisticos de obera misiones, alojamiento obera, obera alojamiento, lodge en obera, las termas de obera, misiones Oberá, obera misiones cabañas, hotel casino obera misiones, azul hotel obera, cabañas de la selva Oberá,hotel real obera, cabañas con pileta en obera misiones, termas de obera misiones precios, salto el berrondo obera misiones,lugares para visitar en obera misiones, lugares turisticos en obera misiones, en Oberá, turismo obera misiones, fotos de obera misiones, termas en obera misiones,  monte aventura obera, salto berrondo misiones, descanso verde obera, salto berrondo obera misiones precios, termas de la selva Oberá, las termas obera, las misiones de obera, ">
       <title>Contacto - Obera Web</title>
+      <link  rel="icon"   href="../images/favicon_io/apple-touch-icon.png" type="image/png" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -74,29 +75,29 @@
         </div>
       </nav>
 
-      <main class="main"> <!--Contenido--> 
+      <main class="main"> <!--Formulario Funcionando Ok--> 
         <section id="contactenos" class="seccion"> 
             <div  id="googlemaps" style="width: 100%"><iframe width="520" height="400" frameborder="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Av%20Las%20Americas%20735+(Obera)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 <div id="contactform" class="container-fluid">
                     <div class="row">
                       <div class="separador col-0 col-sm-6 col-md-6 col-lg-8 "></div>
                       <div class="col-12 col-sm-6 col-md-6 col-lg-4" >
-                          <form  action="" method="post">
-                              <div class="form-block">
-                                  <input type="text" name="nombre" class="form-control" placeholder="Su Nombre">
+                          <form  action="" method="post" id="form">
+                              <div class="form-block"> <!--Validaciones basicas ok-->
+                                  <input type="text" name="name" id="name" class="form-control" placeholder="Su Nombre" required>
                               </div>
                               <div class="form-block">
-                                  <input type="email" name="email" class="form-control" placeholder="Su Email">                       
+                                  <input type="email" name="email" id="email" class="form-control" placeholder="Su Email" required>                       
                               </div>
                               <div class="form-block">
-                                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                                  <textarea name="message" id="message" placeholder="Mensaje" required></textarea>
                               </div>
                               <div class="form-block ">
-                                  <input type="submit" class="boton boton-blanco" value="Enviar">
+                                  <input type="submit" class="boton boton-blanco" value="Enviar" >
                               </div>
                           </form>
-                      </div>
-                        
+                          <a href="mailto:alvez_jmariano@hotmail.com" id="envioMail">mail</a> <!--cambie por su mail para pruebas-->
+                      </div>                        
                     </div>
                 </div>
             </div>
@@ -140,7 +141,7 @@
           <p>&copy; OberaWeb 2021 | All Rights Reserved.</p>
         </div>       
       </footer>
-          
+       <script src="../scripts/mail.js"></script>   
       <script src="https://kit.fontawesome.com/fea90f1766.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
   </body>

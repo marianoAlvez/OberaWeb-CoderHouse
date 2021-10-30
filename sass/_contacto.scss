@@ -5,6 +5,10 @@
 
 #contactenos {
     position: relative;  
+
+    #envioMail {
+      opacity: 0;
+    }
     
     .container-fluid{
       width: 100%;
@@ -51,7 +55,7 @@
                 width: 100%;
                 padding: .5rem 1rem;
                 box-shadow: $shadowRightBottom;
-            }            
-          }
-        } 
-    }
+              }            
+        }
+    }  
+}
